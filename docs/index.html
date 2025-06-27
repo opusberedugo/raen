@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Access</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm py-3 shadow-md mb-5">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8">
+      <div class="relative md:flex md:items-center md:justify-between">
+          <div class="flex items-center justify-between">
+            <a class="flex-none focus:outline-hidden focus:opacity-80" href="#">
+              <img class="w-28 h-auto" src="./img/logo.png" alt="Royal Access Logo">
+            </a>
+
+            <div class="md:hidden">
+              <button type="button" class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none " id="hs-navbar-page-demo-pricing-collapse" aria-expanded="false" aria-controls="hs-navbar-page-demo-pricing" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-page-demo-pricing">
+                <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="hs-navbar-page-demo-pricing" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-navbar-page-demo-pricing-collapse">
+            <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 ">
+              <div class="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:ps-7 md:divide-y-0 md:divide-solid ">
+                <a class="py-3 md:py-6 font-medium text-gray-600 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 " href="#" aria-current="page">
+                  Home
+                </a>
+
+                <a class="py-3 md:py-6 font-medium text-gray-600 hover:text-gray-500 focus:outline-hidden focus:text-gray-500" href="#">
+                  Company
+                </a>
+
+                <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-4">
+                  <button id="hs-mega-menu-pdp" type="button" class="flex items-center w-full text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 font-medium" aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
+                    Resources
+                    <svg class="ms-2 size-2.5 text-gray-500 " width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
+
+                  <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full start-0 min-w-60 bg-white md:shadow-2xl rounded-lg py-2 md:p-4  before:absolute before:-top-5 before:start-0 before:w-full before:h-5" role="menu" aria-orientation="vertical" aria-labelledby="hs-mega-menu-pdp">
+                    <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      <div class="flex flex-col mx-1 md:mx-0">
+                        <a class="group flex gap-x-5 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-lg p-4" href="#">
+                          <svg class="shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                          <div class="grow">
+                            <p class="font-medium text-gray-800 ">Support Docs</p>
+                            <p class="text-sm text-gray-500 group-hover:text-gray-800 group-focus:text-gray-800 ">Explore advice and explanations for all of Preline's features.</p>
+                          </div>
+                        </a>
+
+                        <a class="group flex gap-x-5 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-lg p-4" href="#">
+                          <svg class="shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></svg>
+                          <div class="grow">
+                            <p class="font-medium text-gray-800 ">Integrations</p>
+                            <p class="text-sm text-gray-500 group-hover:text-gray-800 group-focus:text-gray-800 ">Discover the huge range of tools that Preline integrates with.</p>
+                          </div>
+                        </a>
+
+                        <a class="group flex gap-x-5 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-lg p-4 " href="#">
+                          <svg class="shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
+                          <div class="grow">
+                            <p class="font-medium text-gray-800 ">API Reference</p>
+                            <p class="text-sm text-gray-500 group-hover:text-gray-800 group-focus:text-gray-800">Build custom integrations with our first-class API.</p>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="flex flex-col mx-1 md:mx-0">
+                        <a class="group flex gap-x-5 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-lg p-4 " href="#">
+                          <svg class="shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                          <div class="grow">
+                            <p class="font-medium text-gray-800 ">Help Center</p>
+                            <p class="text-sm text-gray-500 group-hover:text-gray-800 group-focus:text-gray-800 ">Learn how to install, set up, and use Preline.</p>
+                          </div>
+                        </a>
+
+                        <a class="group flex gap-x-5 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-lg p-4 " href="#">
+                          <svg class="shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>
+                          <div class="grow">
+                            <p class="font-medium text-gray-800 ">Developer Hub</p>
+                            <p class="text-sm text-gray-500 group-hover:text-gray-800 group-focus:text-gray-800">Learn how to integrate or build on top of Preline.</p>
+                          </div>
+                        </a>
+
+                        <a class="group flex gap-x-5 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-lg p-4 " href="#">
+                          <svg class="shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                          <div class="grow">
+                            <p class="font-medium text-gray-800 ">Community Forum</p>
+                            <p class="text-sm text-gray-500 group-hover:text-gray-800 group-focus:text-gray-800 ">Learn, share, and connect with other Preline users.</p>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="flex flex-col pt-4 md:pt-0 mx-1 md:mx-0">
+                        <span class="text-sm font-semibold uppercase text-gray-800 ">Customer stories</span>
+
+                        <a class="mt-4 group flex gap-x-5 items-center focus:outline-hidden" href="#">
+                          <img class="size-32 rounded-lg" src="https://images.unsplash.com/photo-1648737967328-690548aec14f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=320&q=80" alt="Avatar">
+                          <div class="grow">
+                            <p class="text-gray-800 ">Preline Projects has proved to be most efficient cloud based project tracking and bug tracking tool.</p>
+                            <p class="mt-3 inline-flex items-center gap-x-2 text-sm font-semibold text-gray-800 ">
+                              Learn more
+                              <svg class="shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="py-3 md:py-6 font-medium text-gray-600 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 " href="#">
+                  Login
+                </a>
+
+                <div class="pt-3 md:pt-0">
+                  <a class="py-2.5 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-violet-900 text-white hover:bg-violet-700 focus:outline-hidden focus:bg-violet-700 disabled:opacity-50 disabled:pointer-events-none" href="./contact.html">
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+<!-- Hero -->
+  <section class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-4xl font-bold text-gray-800 sm:text-4xl lg:text-4xl lg:leading-tight ">Powering Tomorrow's World Through Innovative Engineering & Renewable Energy Solutions</h1>
+        <p class="mt-3 text-lg text-gray-800 ">At Royalty Access EN-Tech, we're not just building infrastructure – we're engineering a sustainable future. As a global leader in renewable energy systems and cutting-edge technology services, we partner with governments, corporations, and communities worldwide to deliver solutions that matter.</p>
+
+      <!-- Buttons -->
+      <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+        <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          Get Consultation
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none  " href="#">
+          Explore Solutions
+        </a>
+      </div>
+      <!-- End Buttons -->
+      
+    </div>
+    <!-- End Col -->
+
+    <div class="relative ms-4">
+      <img class="w-full rounded-md" src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80" alt="Hero Image">
+      <!-- <div class="absolute inset-0 -z-1 bg-linear-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 "></div> -->
+
+      <!-- SVG-->
+      <!-- <div class="absolute bottom-0 start-0">
+        <svg class="w-2/3 ms-auto h-auto text-white " width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="531" y="352" width="99" height="99" fill="currentColor"/>
+          <rect x="140" y="352" width="106" height="99" fill="currentColor"/>
+          <rect x="482" y="402" width="64" height="49" fill="currentColor"/>
+          <rect x="433" y="402" width="63" height="49" fill="currentColor"/>
+          <rect x="384" y="352" width="49" height="50" fill="currentColor"/>
+          <rect x="531" y="328" width="50" height="50" fill="currentColor"/>
+          <rect x="99" y="303" width="49" height="58" fill="currentColor"/>
+          <rect x="99" y="352" width="49" height="50" fill="currentColor"/>
+          <rect x="99" y="392" width="49" height="59" fill="currentColor"/>
+          <rect x="44" y="402" width="66" height="49" fill="currentColor"/>
+          <rect x="234" y="402" width="62" height="49" fill="currentColor"/>
+          <rect x="334" y="303" width="50" height="49" fill="currentColor"/>
+          <rect x="581" width="49" height="49" fill="currentColor"/>
+          <rect x="581" width="49" height="64" fill="currentColor"/>
+          <rect x="482" y="123" width="49" height="49" fill="currentColor"/>
+          <rect x="507" y="124" width="49" height="24" fill="currentColor"/>
+          <rect x="531" y="49" width="99" height="99" fill="currentColor"/>
+        </svg>
+      </div> -->
+      <!-- End SVG-->
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Grid -->
+  </section>
+<!-- End Hero -->
+
+
+<!-- Services Section -->
+ <section class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <!-- Title -->
+  <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Our Services</h2>
+    <!-- <p class="mt-1 text-gray-600 ">Stay in the know with insights from industry experts.</p> -->
+  </div>
+  <!-- End Title -->
+
+  <!-- Grid -->
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card -->
+    <a class="group flex flex-col focus:outline-hidden" href="#">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+        <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
+        <!-- <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 ">
+          Sponsored
+        </span> -->
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 ">
+          Renewable Energy Systems
+        </h3>
+        <p class="mt-3 text-gray-800 ">
+          Solar, wind, hydro, tidal, biomass, and geothermal solutions
+        </p>
+        <p class="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium ">
+          Read more
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </p>
+      </div>
+    </a>
+    <!-- End Card -->
+
+    <!-- Card -->
+    <a class="group flex flex-col focus:outline-hidden" href="#">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+        <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
+        <!-- <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 ">
+          Sponsored
+        </span> -->
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 ">
+          Engineering & Technology Services
+        </h3>
+        <p class="mt-3 text-gray-800 ">
+          Custom design, implementation, and optimization
+        </p>
+        <p class="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium ">
+          Read more
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </p>
+      </div>
+    </a>
+    <!-- End Card -->
+
+    <!-- Card -->
+    <a class="group flex flex-col focus:outline-hidden" href="#">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+        <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
+        <!-- <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 ">
+          Sponsored
+        </span> -->
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 ">
+          Climate Technology Procurement
+        </h3>
+        <p class="mt-3 text-gray-800 ">
+          Advanced systems that support global climate goals
+        </p>
+        <p class="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium ">
+          Read more
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </p>
+      </div>
+    </a>
+    <!-- End Card -->
+
+    <!-- Card -->
+    <a class="group flex flex-col focus:outline-hidden" href="#">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+        <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
+        <!-- <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 ">
+          Sponsored
+        </span> -->
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 ">
+          General Contracting & Distribution
+        </h3>
+        <p class="mt-3 text-gray-800 ">
+          End-to-end project delivery and product supply
+        </p>
+        <p class="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium ">
+          Read more
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </p>
+      </div>
+    </a>
+    <!-- End Card -->
+  </div>
+  <!-- Grid -->
+
+ </section>
+<!-- Services Section -->
+
+<!-- Why Us -->
+ <section class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Why Choose Royal Access?</h2>
+    <!-- <p class="mt-1 text-gray-600 ">Stay in the know with insights from industry experts.</p> -->
+  </div>
+
+  <!-- Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
+      <div class="aspect-w-16 aspect-h-9 lg:aspect-none">
+        <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=480&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Features Image">
+      </div>
+      <!-- End Col -->
+
+      <!-- Timeline -->
+      <div>
+        <!-- Item -->
+        <div class="group relative flex gap-x-5">
+          <!-- Icon -->
+          <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+          </div>
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <div class="grow pb-8 group-last:pb-0">
+            
+
+            <p class="font-semibold text-sm text-gray-800 ">
+              Proven Track Record
+            </p>
+
+            <p class="mt-1 text-sm text-gray-600 ">
+              This is an excellent company and they reward their employees. It's becoming a big company but it's still private, so the culture is as good as it gets at 1,000+ employees if you ask me. Managers are still adapting to the growth I think, but everyone has to. Great place to work.
+            </p>
+
+            
+          </div>
+          <!-- End Right Content -->
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="group relative flex gap-x-5">
+          <!-- Icon -->
+          <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+          </div>
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <div class="grow pb-8 group-last:pb-0">
+            
+
+            <p class="font-semibold text-sm text-gray-800 ">
+              Complete Solutions
+            </p>
+
+            <p class="mt-1 text-sm text-gray-600 ">
+              From initial consultation to long-term maintenance
+            </p>
+
+            
+          </div>
+          <!-- End Right Content -->
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="group relative flex gap-x-5">
+          <!-- Icon -->
+          <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+          </div>
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <div class="grow pb-8 group-last:pb-0">
+            <!-- <h3 class="mb-1 text-xs text-gray-600 ">
+              2011 - 2021
+            </h3> -->
+
+            <p class="font-semibold text-sm text-gray-800 ">
+              Cutting-Edge Technology
+            </p>
+
+            <p class="mt-1 text-sm text-gray-600 ">
+            Access to the world's most advanced renewable systems
+            </p>
+          </div>
+          <!-- End Right Content -->
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="group relative flex gap-x-5">
+          <!-- Icon -->
+          <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+          </div>
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <div class="grow pb-8 group-last:pb-0">
+            <!-- <h3 class="mb-1 text-xs text-gray-600 ">
+              2011 - 2021
+            </h3> -->
+
+            <p class="font-semibold text-sm text-gray-800 ">
+              Cutting-Edge Technology
+            </p>
+
+            <p class="mt-1 text-sm text-gray-600 ">
+            Access to the world's most advanced renewable systems
+            </p>
+          </div>
+          <!-- End Right Content -->
+        </div>
+        <!-- End Item -->
+
+
+        <!-- Item -->
+        <!-- <div class="group relative flex gap-x-5"> -->
+          <!-- Icon -->
+          <!-- <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <svg class="shrink-0 size-6 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+            </div>
+          </div> -->
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <!-- <div class="grow pb-8 group-last:pb-0">
+            <h3 class="mb-1 text-xs text-gray-600 ">
+              2010 - 2011
+            </h3>
+
+            <p class="font-semibold text-sm text-gray-800 ">
+              Freelance Graphic Designer
+            </p>
+
+            <ul class="list-disc ms-6 mt-3 space-y-1.5">
+              <li class="ps-1 text-sm text-gray-600 ">
+                Worked with a diverse range of clients, delivering tailored design solutions.
+              </li>
+              <li class="ps-1 text-sm text-gray-600 ">
+                Developed and maintained strong client relationships through effective communication and project management.
+              </li>
+              <li class="ps-1 text-sm text-gray-600 ">
+                Utilized tools such as Notion for project tracking, Mailchimp for email marketing designs, Slack for team collaboration, and GitHub for version control and project sharing.
+              </li>
+            </ul>
+          </div> -->
+          <!-- End Right Content -->
+        <!-- </div> -->
+        <!-- End Item -->
+      </div>
+      <!-- End Timeline -->
+    </div>
+    <!-- End Grid -->
+  
+ </section>
+<!-- Why Us -->
+
+<!-- Subscribe -->
+<div class="relative overflow-hidden">
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+    <div class="text-center">
+      <h1 class="text-4xl sm:text-6xl font-bold text-gray-800 ">
+        Subscribe to Our Newsletter
+      </h1>
+
+      <p class="mt-3 text-gray-600 ">
+        Stay in the know.
+      </p>
+
+      <div class="mt-7 sm:mt-12 mx-auto max-w-xl relative">
+        <!-- Form -->
+        <form>
+          <div class="relative z-10 flex gap-x-3 p-3 bg-white border border-gray-200 rounded-lg shadow-lg shadow-gray-100 ">
+            <div class="w-full">
+              <label for="hs-search-article-1" class="block text-sm text-gray-700 font-medium "><span class="sr-only">Search article</span></label>
+              <input type="email" name="hs-search-article-1" id="hs-search-article-1" class="py-2.5 px-4 block w-full border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 " placeholder="Search article">
+            </div>
+            <div>
+              <a class="size-11 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              </a>
+            </div>
+          </div>
+        </form>
+        <!-- End Form -->
+
+        <!-- SVG Element -->
+        <div class="hidden md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
+          <svg class="w-16 h-auto text-orange-500" width="121" height="135" viewBox="0 0 121 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+            <path d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+            <path d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <!-- End SVG Element -->
+
+        <!-- SVG Element -->
+        <div class="hidden md:block absolute bottom-0 start-0 translate-y-10 -translate-x-32">
+          <svg class="w-40 h-auto text-cyan-500" width="347" height="188" viewBox="0 0 347 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 82.4591C54.7956 92.8751 30.9771 162.782 68.2065 181.385C112.642 203.59 127.943 78.57 122.161 25.5053C120.504 2.2376 93.4028 -8.11128 89.7468 25.5053C85.8633 61.2125 130.186 199.678 180.982 146.248L214.898 107.02C224.322 95.4118 242.9 79.2851 258.6 107.02C274.299 134.754 299.315 125.589 309.861 117.539L343 93.4426" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <!-- End SVG Element -->
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End Hero -->
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto shadow-lg">
+  <!-- Grid -->
+  <div class="grid grid-cols-1 gap-6 mb-10">
+    <div class="col-span-full hidden lg:col-span-1 lg:block">
+      <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 " href="#" aria-label="Brand">
+        <img src="./img/logo.png" alt="" srcset="" class="h-14">
+      </a>
+      <!-- <p class="mt-3 text-xs sm:text-sm text-gray-600 ">
+        © 2025 Preline Labs.
+      </p> -->
+    </div>
+    <!-- End Col -->
+
+  </div>
+  <!-- End Grid -->
+
+  <div class="pt-5 mt-5 border-t border-gray-200">
+    <div class="sm:flex sm:justify-between sm:items-center">
+      <div class="flex flex-wrap justify-between items-center gap-3">
+        <div class="mt-3 sm:hidden">
+          <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 " href="#" aria-label="Brand">Brand</a>
+          <p class="mt-1 text-xs sm:text-sm text-gray-600 ">
+            © 2025 Preline Labs.
+          </p>
+        </div>
+
+        <!-- Social Brands -->
+        <div class="space-x-4">
+          <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 " href="#">
+            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+          </a>
+          <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 " href="#">
+            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 " href="#">
+            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- End Social Brands -->
+      </div>
+      <!-- End Col -->
+    </div>
+  </div>
+</footer>
+<!-- ========== END FOOTER ========== -->
+
+</body>
+</html>

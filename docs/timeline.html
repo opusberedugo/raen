@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Timeline Component</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        /* Stagger animation delays */
+        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(5) { animation-delay: 0.5s; }
+        .timeline-item:nth-child(6) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen py-12 px-4">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Our Journey</h1>
+            <p class="text-xl text-gray-600">Milestones in our company's evolution</p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="relative">
+            <!-- Timeline Line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-purple-600 h-full"></div>
+            
+            <!-- Timeline Items -->
+            <div class="space-y-12">
+                <!-- Timeline Item 1 - Left -->
+                <div class="timeline-item opacity-0 animate-fade-in-up flex items-center">
+                    <div class="flex-1 pr-8 text-right">
+                        <div class="bg-white rounded-lg shadow-lg p-6 mr-4 border-l-4 border-blue-500 hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-end mb-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">2020</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Company Founded</h3>
+                            <p class="text-gray-600 mb-3">Started our journey with a vision to revolutionize renewable energy solutions globally.</p>
+                            <div class="flex justify-end">
+                                <span class="inline-flex items-center text-sm text-blue-600">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Milestone Achieved
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Node -->
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center relative z-10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex-1 pl-8"></div>
+                </div>
+
+                <!-- Timeline Item 2 - Right -->
+                <div class="timeline-item opacity-0 animate-fade-in-up flex items-center">
+                    <div class="flex-1 pr-8"></div>
+                    
+                    <!-- Timeline Node -->
+                    <div class="flex-shrink-0 w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center relative z-10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex-1 pl-8">
+                        <div class="bg-white rounded-lg shadow-lg p-6 ml-4 border-l-4 border-green-500 hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">2021</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">First Major Contract</h3>
+                            <p class="text-gray-600 mb-3">Secured our first 50MW solar installation project, marking a significant milestone in our growth.</p>
+                            <div class="flex items-center text-sm text-green-600">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Revenue Growth
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 - Left -->
+                <div class="timeline-item opacity-0 animate-fade-in-up flex items-center">
+                    <div class="flex-1 pr-8 text-right">
+                        <div class="bg-white rounded-lg shadow-lg p-6 mr-4 border-l-4 border-purple-500 hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-end mb-2">
+                                <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">2022</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">International Expansion</h3>
+                            <p class="text-gray-600 mb-3">Expanded operations to 5 new countries, establishing our global presence in renewable energy.</p>
+                            <div class="flex justify-end">
+                                <span class="inline-flex items-center text-sm text-purple-600">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Global Reach
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Node -->
+                    <div class="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center relative z-10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex-1 pl-8"></div>
+                </div>
+
+                <!-- Timeline Item 4 - Right -->
+                <div class="timeline-item opacity-0 animate-fade-in-up flex items-center">
+                    <div class="flex-1 pr-8"></div>
+                    
+                    <!-- Timeline Node -->
+                    <div class="flex-shrink-0 w-12 h-12 bg-orange-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center relative z-10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex-1 pl-8">
+                        <div class="bg-white rounded-lg shadow-lg p-6 ml-4 border-l-4 border-orange-500 hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-orange-100 text-orange-800 text-sm font-medium px-3 py-1 rounded-full">2023</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Industry Recognition</h3>
+                            <p class="text-gray-600 mb-3">Received the "Innovation in Renewable Energy" award and achieved carbon-neutral certification.</p>
+                            <div class="flex items-center text-sm text-orange-600">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                Award Winner
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 - Left -->
+                <div class="timeline-item opacity-0 animate-fade-in-up flex items-center">
+                    <div class="flex-1 pr-8 text-right">
+                        <div class="bg-white rounded-lg shadow-lg p-6 mr-4 border-l-4 border-indigo-500 hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-end mb-2">
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Technology Innovation</h3>
+                            <p class="text-gray-600 mb-3">Launched our proprietary AI-powered energy management system, revolutionizing grid optimization.</p>
+                            <div class="flex justify-end">
+                                <span class="inline-flex items-center text-sm text-indigo-600">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Innovation Leader
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Node -->
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center relative z-10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex-1 pl-8"></div>
+                </div>
+
+                <!-- Timeline Item 6 - Right (Future) -->
+                <div class="timeline-item opacity-0 animate-fade-in-up flex items-center">
+                    <div class="flex-1 pr-8"></div>
+                    
+                    <!-- Timeline Node -->
+                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center relative z-10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex-1 pl-8">
+                        <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-lg shadow-lg p-6 ml-4 border-l-4 border-gradient-to-b border-pink-500 hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-gradient-to-r from-pink-100 to-rose-100 text-pink-800 text-sm font-medium px-3 py-1 rounded-full">2025 & Beyond</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Future Vision</h3>
+                            <p class="text-gray-600 mb-3">Expanding to 50+ countries with next-generation renewable technologies and sustainable energy solutions.</p>
+                            <div class="flex items-center text-sm text-pink-600">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                </svg>
+                                Coming Soon
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Timeline for smaller screens -->
+        <div class="md:hidden mt-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Mobile Timeline</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">2020</span>
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Company Founded</h3>
+                    <p class="text-gray-600 text-sm">Started our journey with a vision to revolutionize renewable energy solutions globally.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">2021</span>
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">First Major Contract</h3>
+                    <p class="text-gray-600 text-sm">Secured our first 50MW solar installation project, marking a significant milestone.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-500">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">2022</span>
+                        <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">International Expansion</h3>
+                    <p class="text-gray-600 text-sm">Expanded operations to 5 new countries, establishing global presence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Timeline -->
+<div>
+  <!-- Item -->
+  <div class="group relative flex gap-x-5">
+    <!-- Icon -->
+    <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+      <div class="relative z-10 size-6 flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+        </svg>
+      </div>
+    </div>
+    <!-- End Icon -->
+
+    <!-- Right Content -->
+    <div class="grow pb-8 group-last:pb-0">
+      
+
+      <p class="font-semibold text-sm text-gray-800 ">
+        Proven Track Record
+      </p>
+
+      <p class="mt-1 text-sm text-gray-600 ">
+        This is an excellent company and they reward their employees. It's becoming a big company but it's still private, so the culture is as good as it gets at 1,000+ employees if you ask me. Managers are still adapting to the growth I think, but everyone has to. Great place to work.
+      </p>
+
+      
+    </div>
+    <!-- End Right Content -->
+  </div>
+  <!-- End Item -->
+
+  <!-- Item -->
+  <div class="group relative flex gap-x-5">
+    <!-- Icon -->
+    <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+      <div class="relative z-10 size-6 flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+        </svg>
+      </div>
+    </div>
+    <!-- End Icon -->
+
+    <!-- Right Content -->
+    <div class="grow pb-8 group-last:pb-0">
+      
+
+      <p class="font-semibold text-sm text-gray-800 ">
+        Complete Solutions
+      </p>
+
+      <p class="mt-1 text-sm text-gray-600 ">
+        From initial consultation to long-term maintenance
+      </p>
+
+      
+    </div>
+    <!-- End Right Content -->
+  </div>
+  <!-- End Item -->
+
+  <!-- Item -->
+  <div class="group relative flex gap-x-5">
+    <!-- Icon -->
+    <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+      <div class="relative z-10 size-6 flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+        </svg>
+      </div>
+    </div>
+    <!-- End Icon -->
+
+    <!-- Right Content -->
+    <div class="grow pb-8 group-last:pb-0">
+      <!-- <h3 class="mb-1 text-xs text-gray-600 ">
+        2011 - 2021
+      </h3> -->
+
+      <p class="font-semibold text-sm text-gray-800 ">
+        Cutting-Edge Technology
+      </p>
+
+      <p class="mt-1 text-sm text-gray-600 ">
+       Access to the world's most advanced renewable systems
+      </p>
+    </div>
+    <!-- End Right Content -->
+  </div>
+  <!-- End Item -->
+
+  <!-- Item -->
+  <div class="group relative flex gap-x-5">
+    <!-- Icon -->
+    <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 ">
+      <div class="relative z-10 size-6 flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+        </svg>
+      </div>
+    </div>
+    <!-- End Icon -->
+
+    <!-- Right Content -->
+    <div class="grow pb-8 group-last:pb-0">
+      <!-- <h3 class="mb-1 text-xs text-gray-600 ">
+        2011 - 2021
+      </h3> -->
+
+      <p class="font-semibold text-sm text-gray-800 ">
+        Cutting-Edge Technology
+      </p>
+
+      <p class="mt-1 text-sm text-gray-600 ">
+       Access to the world's most advanced renewable systems
+      </p>
+    </div>
+    <!-- End Right Content -->
+  </div>
+  <!-- End Item -->
+
+
+  <!-- Item -->
+  <!-- <div class="group relative flex gap-x-5"> -->
+    <!-- Icon -->
+    <!-- <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+      <div class="relative z-10 size-6 flex justify-center items-center">
+        <svg class="shrink-0 size-6 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+      </div>
+    </div> -->
+    <!-- End Icon -->
+
+    <!-- Right Content -->
+    <!-- <div class="grow pb-8 group-last:pb-0">
+      <h3 class="mb-1 text-xs text-gray-600 ">
+        2010 - 2011
+      </h3>
+
+      <p class="font-semibold text-sm text-gray-800 ">
+        Freelance Graphic Designer
+      </p>
+
+      <ul class="list-disc ms-6 mt-3 space-y-1.5">
+        <li class="ps-1 text-sm text-gray-600 ">
+          Worked with a diverse range of clients, delivering tailored design solutions.
+        </li>
+        <li class="ps-1 text-sm text-gray-600 ">
+          Developed and maintained strong client relationships through effective communication and project management.
+        </li>
+        <li class="ps-1 text-sm text-gray-600 ">
+          Utilized tools such as Notion for project tracking, Mailchimp for email marketing designs, Slack for team collaboration, and GitHub for version control and project sharing.
+        </li>
+      </ul>
+    </div> -->
+    <!-- End Right Content -->
+  <!-- </div> -->
+  <!-- End Item -->
+</div>
+<!-- End Timeline -->
+
+
+</body>
+</html>
+<a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-hidden" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:delay-100 transition" d="M14.05 2a9 9 0 0 1 8 7.94"></path><path class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition" d="M14.05 6A5 5 0 0 1 18 10"></path></svg>
+          Schedule a call
+        </a>
