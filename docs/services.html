@@ -133,7 +133,7 @@
     <p class="mt-1 text-gray-600">Comprehensive solutions for Africa's sustainable future</p>
   </div>
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
     <!-- Renewable Energy Development -->
     <div class="flex flex-col bg-white border border-gray-200 text-center rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
       <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -187,6 +187,28 @@
       </div>
       <h3 class="text-lg font-semibold text-gray-800 mb-2">Strategic Flexibility and Support Services</h3>
       <p class="text-gray-600 text-sm">Partnerships, auxiliary services, and special projects aligned with our expertise</p>
+    </div>
+
+    <!-- Training and Community Development -->
+    <div class="flex flex-col bg-white border border-gray-200 text-center rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+      <div class="w-12 h-12 mx-auto mb-4 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Training and Community Development</h3>
+      <p class="text-gray-600 text-sm">Capacity building, skills development, and community engagement programs for sustainable growth</p>
+    </div>
+
+    <!-- Solar Panels & Inverters Procurement -->
+    <div class="flex flex-col bg-white border border-gray-200 text-center rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+      <div class="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-lg flex items-center justify-center">
+        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Solar Panels & Inverters Procurement</h3>
+      <p class="text-gray-600 text-sm">Complete procurement and professional installation of solar panels, inverters, and related equipment</p>
     </div>
 
     <!-- Contact Us CTA -->
@@ -504,61 +526,7 @@
 <!-- ========== END FOOTER ========== -->
  
 <script src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"></script>
-<script>
-  // Mobile Menu Toggle Functionality
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the toggle button and menu
-    const toggleButton = document.getElementById('hs-navbar-royalty-access-collapse');
-    const menu = document.getElementById('hs-navbar-royalty-access');
-    
-    if (toggleButton && menu) {
-        toggleButton.addEventListener('click', function() {
-            // Toggle the menu visibility
-            const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-            
-            if (isExpanded) {
-                // Hide menu
-                menu.classList.add('hidden');
-                toggleButton.setAttribute('aria-expanded', 'false');
-                toggleButton.classList.remove('hs-collapse-open');
-            } else {
-                // Show menu
-                menu.classList.remove('hidden');
-                toggleButton.setAttribute('aria-expanded', 'true');
-                toggleButton.classList.add('hs-collapse-open');
-            }
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const isClickInsideNav = toggleButton.contains(event.target) || menu.contains(event.target);
-            
-            if (!isClickInsideNav && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-                toggleButton.setAttribute('aria-expanded', 'false');
-                toggleButton.classList.remove('hs-collapse-open');
-            }
-        });
-        
-        // Close menu when window is resized to desktop size
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 768) { // md breakpoint
-                menu.classList.remove('hidden');
-                toggleButton.setAttribute('aria-expanded', 'false');
-                toggleButton.classList.remove('hs-collapse-open');
-            } else {
-                // On mobile, start with menu hidden
-                menu.classList.add('hidden');
-            }
-        });
-        
-        // Initialize menu state based on screen size
-        if (window.innerWidth < 768) {
-            menu.classList.add('hidden');
-        }
-    }
-});
-</script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
 
