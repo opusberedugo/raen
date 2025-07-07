@@ -484,7 +484,7 @@
             <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
             </svg>
-            <span class="text-sm text-gray-300">+44 20 XXXX XXXX</span>
+            <span class="text-sm text-gray-300"> +44 77 4264 6574</span>
           </div>
         </div>
       </div>
@@ -500,5 +500,28 @@
 <script src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/typewritter.js"></script>
+<script>
+  // Initialize the typewriter effect when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const typewriterElement = document.getElementById('typewriter-text');
+    
+    const phrases = [
+        'Engineering the Future Through Renewable Energy Innovation',
+        'Pioneering Sustainable Technology Solutions for Africa',
+        'Transforming Industries with Clean Energy Excellence',
+        'Building Tomorrow\'s Green Infrastructure Today',
+        'Driving Nigeria\'s Renewable Energy Revolution',
+        'Creating Sustainable Engineering Solutions That Matter',
+        'Innovating for a Cleaner, Greener Future'
+    ];
+    
+    new TypewriterEffect(typewriterElement, phrases, {
+        typeSpeed: 80,
+        deleteSpeed: 40,
+        pauseDelay: 2500,
+        deleteDelay: 1000
+    });
+});
+</script>
 </body>
 </html>

@@ -57,24 +57,3 @@ class TypewriterEffect {
   }
 }
         
-// Initialize the typewriter effect when the page loads
-document.addEventListener('DOMContentLoaded', function() {
-    const typewriterElement = document.getElementById('typewriter-text');
-    
-    const phrases = [
-        'Engineering the Future Through Renewable Energy Innovation',
-        'Pioneering Sustainable Technology Solutions for Africa',
-        'Transforming Industries with Clean Energy Excellence',
-        'Building Tomorrow\'s Green Infrastructure Today',
-        'Driving Nigeria\'s Renewable Energy Revolution',
-        'Creating Sustainable Engineering Solutions That Matter',
-        'Innovating for a Cleaner, Greener Future'
-    ];
-    
-    new TypewriterEffect(typewriterElement, phrases, {
-        typeSpeed: 80,
-        deleteSpeed: 40,
-        pauseDelay: 2500,
-        deleteDelay: 1000
-    });
-});
